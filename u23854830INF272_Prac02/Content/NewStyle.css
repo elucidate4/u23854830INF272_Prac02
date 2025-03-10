@@ -1,0 +1,98 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #e8f7d6;
+    
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Menu Styling */
+.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+    .main-menu a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        border-right: 1px solid #555;
+    }
+
+        .main-menu a:last-child {
+            border-right: none;
+        }
+
+        .main-menu a:hover {
+            background-color: #555;
+        }
+
+        .main-menu a.active {
+            background-color: #4CAF50;
+        }
+
+/* Section Styling, sections should indicate separations */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Image Styling make sure they're positioned properly */
+.left-image {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.right-image {
+    float: right;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Image Flip Mirror Thing */
+    .left-image:hover, .right-image:hover {
+        transform: scaleX(-1);
+    }
+
+/* Table Styling because I really don't know how to do columns*/
+.modules-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .modules-table th, .modules-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .modules-table th {
+        background-color: #f2f2f2;
+    }
+
+/* Clear floats after sections */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+
+}
+
